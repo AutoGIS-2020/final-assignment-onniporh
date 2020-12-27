@@ -51,7 +51,7 @@ The analysis starts with data fetching. These tools utilize any land usage polyg
 This part will create statistics into an variable that can be visualized. More detailed information can be found in the Notebook and in the function files.
 
 ### Results:
-Results are displayed in the interactive map and in with the postal code land usage Visualizer. These can also be found in the Notebook. 
+Results are displayed in the interactive map and in with the postal code land usage Visualizer. These can also be found in the Notebook. Interactive map can be found in here https://autogis-2020.github.io/final-assignment-onniporh/pop_growth_and_land_use_map.html.
 
 
 
