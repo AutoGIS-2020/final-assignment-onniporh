@@ -4,39 +4,54 @@
 
 Once you are finished with the final assignment, edit this readme and add "x" to the correct box:
 
-* [ ] Submitted
+* [x] Submitted
 
-* [x] I'm still working on my final assignment. 
+* [ ] I'm still working on my final assignment. 
 
 
-### Instructions
-
-*you can remote these instructions for the final submission*
-
-Read the final assignment instructions from the course webpages [https://autogis.github.io](https://automating-gis-processes.github.io/site/lessons/FA/final-assignment.html). Remember to write readable code, and to provide adequate documentation using inline comments and markdown. Organize all your code(s) / notebook(s) into this repository and **add links to all relevant files to this `README.md`file**. In sum, anyone who downloads this repository should be able to **read your code and documentation** and understand what is going on, and **run your code** in order to reproduce the same results! :) 
-
-**Modify this readme so that anyone reading it gets a quick overview of your final work topic, and finds all the necessary input data, code and results.** 
-
-*Note: If your code requires some python packages not found in the csc notebooks environment, please mention them also in this readme and provide installation instrutions.*
-
-*Note: Don't upload large files into GitHub! If you are using large input files, provide downloading instructions and perhaps a small sample of the data in this repository for demonstrating your workflow.*
-
-Fill in details of your final project below. You can remove this instructions-section from the README-file if you want.
-
-## Topic: 
+## Green areas, land use and population growth
+#### Population growth, land use and green areas
+Green areas in cities area important to the well being of the people living there. In the notebook, I present tools that will give insight on how the green areas are distributed around the city using postal code area data with the land use data provided by cities. This notebook uses Helsinki as an example, but the tools area applicable to other cities in Finland too. Tools also include analytics for the population growth and land use distribution. The notebook also includes visualization functionalities, that will create an interactive map of the chosen area and a tool for visualizing the land use distribution in a given postal code area.
 
 ### Structure of this repository:
+#### Readme: 
+README.md
+#### Notebook with example usage.
+Green_areas_land_use_and_population_growth.ipynb
+#### Functions-file with the raw tool codes.
+functions.py
+#### Example files: 
+pop_growth_and_land_use_map.html
+
 
 ### Input data:
+#### Postal code area statistics (Paavo-database) from the Statistics Finland.
+http://www.stat.fi/org/avoindata/paikkatietoaineistot/paavo.html
+
+WFS addresses:
+http://geo.stat.fi/geoserver/postialue/wfs?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=postialue:pno_tilasto_2020&outputformat=JSON
+http://geo.stat.fi/geoserver/postialue/wfs?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=postialue:pno_tilasto_2015&outputformat=JSON
+
+
+#### Land usage polygons for the city that is analyzed. 
+This example utilizes the data distributed by the Helsinki Region Infoshare.
+https://hri.fi/data/fi/dataset/seutukartta
+
+WFS addresses: 
+https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=avoindata:Seutukartta_maankaytto_viheralueet&outputformat=JSON
+https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=avoindata:Seutukartta_maankaytto_teollisuusalueet&outputformat=JSON
+https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=avoindata:Seutukartta_maankaytto_rakennetut_alueet&outputformat=JSON
+
 
 ### Analysis steps:
+#### Data fetching
+The analysis starts with data fetching. These tools utilize any land usage polygon data and the Paavo-database data from Finland.
+
+#### Data analysis
+This part will create statistics into an variable that can be visualized. More detailed information can be found in the Notebook and in the function files.
 
 ### Results:
+Results are displayed in the interactive map and in with the postal code land usage Visualizer. These can also be found in the Notebook. 
 
-### References:
 
-*edit according to your submission:*
-- Literature related to the topic
-- Links to websites, tutorials books or articles that you found useful
-- If you got help from your course mates (or collaborated with someone) please mention it in here.
 
