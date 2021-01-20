@@ -8,7 +8,7 @@
 
 ### Comments:
 
-Well done automating the whole workflow all the way from fetching the data to visualizing the results. The analysis presented in the notebook is quite short and straightforward. Borderline too simple, but eventually you have just managed to hide the complexity in the functions you have implemented which is good :) 
+Well done automating the whole workflow all the way from fetching the data to visualizing the results. The analysis presented in the notebook is quite short and straightforward. Borderline too simple, but eventually you have just managed to hide the complexity in the functions you have implemented which is good :) Here are some more detailed comments from Vuokko & Emil: 
 
 - Documentation:
     - In general you have commented nicely and it is easy to follow what's going on. 
@@ -24,6 +24,7 @@ Well done automating the whole workflow all the way from fetching the data to vi
     - Well done splitting the work into more complex functions & the main workflow
     - Green areas function might benefit from being split further
     - Good choise with the thich outlines in the interactive map. 
+    - When looking at the interactive map, I am craving for some popups :D
   
 
 ## Course points and grade
