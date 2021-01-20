@@ -4,7 +4,7 @@
 
 ## Final assignment 
 
-### Grade: 
+### Grade: 5
 
 ### Comments:
 
@@ -29,9 +29,9 @@ Well done automating the whole workflow all the way from fetching the data to vi
 
 ## Course points and grade
 
-- Final assignment: 
-- Exercises: 
-- Course grade: 
+- Final assignment: 5
+- Exercises: 4
+- Course grade: 5
 
 
 
